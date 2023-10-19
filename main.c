@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	open_fi(argv[1]);
-	free_nodes();
+	freenodes();
 	return (0);
 }
 
@@ -32,7 +32,7 @@ stack_t *create_node(int n)
 
 	nod = malloc(sizeof(stack_t));
 	if (nod == NULL)
-		err(4);
+		_error(4);
 	nod->next = NULL;
 	nod->prev = NULL;
 	nod->n = n;

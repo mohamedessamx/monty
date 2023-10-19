@@ -39,7 +39,7 @@ void printstack(stack_t **stack, unsigned int line_number)
 	temp = *stack;
 	while (temp != NULL)
 	{
-		printf("%d\n", tmp->n);
+		printf("%d\n", temp->n);
 		temp = temp->next;
 	}
 }
